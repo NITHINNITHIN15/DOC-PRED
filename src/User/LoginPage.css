@@ -1,0 +1,84 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+  margin-top: 70px;
+  margin-left: 250px;
+  border-radius: 20px;
+  padding: 50px 0;
+  background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+  /* background: linear-gradient(135deg, #f06, #ff9a8b); */
+}
+
+.card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.card input:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.6);
+}
+
+.card button {
+  background: #4facfe;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.butbut{
+  width: 310px;
+}
+
+.card button:hover {
+  background: #3a9be8;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card a {
+  color: #4facfe;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.card a:hover {
+  color: #3a9be8;
+}

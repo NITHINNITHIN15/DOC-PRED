@@ -1,0 +1,159 @@
+/* Container styling */
+.doctor-list-container {
+  padding: 20px;
+  
+}
+
+/* Specialty buttons */
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.specialty-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #007bff;
+  background-color: #ffffff;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.specialty-button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.specialty-button.active {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Doctor cards */
+.doctors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.doctor-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Doctor image */
+.doctor-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Doctor name and specialty */
+.doctor-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.doctor-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Availability status */
+.availability {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.status-dot.available {
+  background-color: green;
+}
+
+.status-dot.unavailable {
+  background-color: red;
+}
+
+/* Book Appointment button */
+.book-appointment-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.book-appointment-button:hover {
+  background-color: #0056b3;
+}
+
+.book-appointment-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .specialties {
+    gap: 5px;
+  }
+
+  .specialty-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .doctor-card {
+    padding: 10px;
+  }
+
+  .doctor-card h3 {
+    font-size: 16px;
+  }
+
+  .doctor-card p {
+    font-size: 12px;
+  }
+
+  .book-appointment-button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+.hospital-name {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  font-weight: 500;
+}

@@ -1,0 +1,116 @@
+
+  .home-container {
+  padding: 20px;
+  text-align: center;
+    width: 1000px;
+    margin-left: 230px;
+}
+
+h1, h2, h3 {
+  color: #007bff;
+}
+
+.result-section {
+  margin-bottom: 30px;
+}
+
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.symptom-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.recheck-button, .back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.recheck-button:hover, .back-button:hover {
+  background-color: #0056b3;
+}
+
+.doctors-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.doctor-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.book-appointment-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.book-appointment-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.homepage-container {
+  padding: 20px;
+}
+
+.symptoms-section, .prediction-section, .doctors-section {
+  margin-bottom: 20px;
+}
+
+.symptom-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.symptom-item label {
+  margin-right: 10px;
+}
+
+.symptom-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.check-another-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.check-another-button:hover {
+  background-color: #0056b3;
+}
+
+.doctor-item {
+  margin-bottom: 15px;
+}
+
+.book-appointment-button{
+  background-color: #007bff;
+  color: #f9f9f9;
+}

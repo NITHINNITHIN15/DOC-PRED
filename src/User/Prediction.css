@@ -1,0 +1,179 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Card Container */
+.cardz {
+  width: 800px;
+  max-width: 1000px;
+  margin: 10px auto;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading and warning styles */
+h1 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.warning {
+  color: #d9534f;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.symptom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.symptom-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.symptom-item label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.symptom-item select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.submit-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+   background-color: #005bbc;
+   color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.result-section {
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.result-section h2 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.result-section p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.appointment-button:hover {
+  background-color: #005bbc;
+  color: #ffffff;
+ transform: translateY(-3px);
+}
+
+.appointment-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+
+
+
+.diabetes-card h2{
+  font-size: 30px;
+}
+
+
+.disease-grid-container {
+  padding: 70px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #c0392b;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.grid-item:hover {
+  background-color: #a93226;
+  cursor: pointer;
+}
